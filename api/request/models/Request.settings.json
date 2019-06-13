@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "request",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "requestedDate": {
+      "default": "",
+      "type": "date"
+    },
+    "receiverEmail": {
+      "default": "",
+      "type": "string"
+    },
+    "isPaid": {
+      "default": false,
+      "type": "boolean"
+    },
+    "user": {
+      "model": "user",
+      "via": "requests",
+      "plugin": "users-permissions"
+    },
+    "reward": {
+      "model": "reward",
+      "via": "requests"
+    }
+  }
+}

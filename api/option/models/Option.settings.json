@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "option",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "default": "",
+      "type": "string"
+    },
+    "isCorrect": {
+      "default": false,
+      "type": "boolean"
+    },
+    "question": {
+      "model": "question",
+      "via": "options"
+    }
+  }
+}

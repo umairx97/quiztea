@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "question",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "image": {
+      "default": "",
+      "type": "string"
+    },
+    "options": {
+      "collection": "option",
+      "via": "question"
+    },
+    "quiz": {
+      "model": "quiz",
+      "via": "questions"
+    }
+  }
+}

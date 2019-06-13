@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "quiz",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "reward": {
+      "default": "",
+      "type": "integer"
+    },
+    "isActive": {
+      "default": false,
+      "type": "boolean"
+    },
+    "createdDate": {
+      "default": "",
+      "type": "date"
+    },
+    "image": {
+      "default": "",
+      "type": "string"
+    },
+    "questions": {
+      "collection": "question",
+      "via": "quiz"
+    },
+    "category": {
+      "model": "category",
+      "via": "quizzes"
+    },
+    "type": {
+      "model": "type",
+      "via": "quizzes"
+    }
+  }
+}

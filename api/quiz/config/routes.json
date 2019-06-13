@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quizzes",
+      "handler": "Quiz.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quizzes/count",
+      "handler": "Quiz.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quizzes/:_id",
+      "handler": "Quiz.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quizzes",
+      "handler": "Quiz.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quizzes/:_id",
+      "handler": "Quiz.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quizzes/:_id",
+      "handler": "Quiz.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/quizzes",
+      "handler": "Quiz.getMobileQuizzes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/quizzes/:_id",
+      "handler": "Quiz.getMobileQuiz",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/quizzesdata",
+      "handler": "Quiz.getWeeklyCountMonth",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
